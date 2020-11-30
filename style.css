@@ -34,6 +34,9 @@ input[type=search]{
     width: 6em;
     height: 2em;
 }
+.jumbotron{
+    display: none;
+}
 
 @media only screen and (max-width: 600px) {
     .btnholder button{
@@ -75,8 +78,14 @@ input[type=search]{
   }
 
     /* For tablet portrait mode */
-  @media (min-width: 1025px) and (max-width: 1280px) {
+    @media only screen and (min-width: 768px) and (orientation:portrait) and (min-height:1024px){
+        .jumbotron{
+            display: inline-block;
+            text-align: center;
+            margin-left:0 auto;
+            font-size: 3em;
+        }
+    }
   
-    
-  }
+
   
